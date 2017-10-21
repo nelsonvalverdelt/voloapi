@@ -1,0 +1,39 @@
+﻿@model VoloApi.Services.Models.ManageViewModel
+@using Microsoft.AspNet.Identity
+@{
+    ViewBag.Title = "Manage";
+}
+
+<h2>@ViewBag.Title.</h2>
+
+<p class="text-success">@ViewBag.StatusMessage</p>
+<div>
+    <h4>Change your account settings</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Password:</dt>
+        <dd>
+            [
+            @if (Model.HasPassword)
+            {
+                @Html.ActionLink("Change your password", "ChangePassword")
+            }
+            else
+            {
+                @Html.ActionLink("Create", "SetPassword")
+            }
+            ]
+        </dd>
+        @if (ViewBag.Administrator == true)
+        {
+            <dt>Create Account</dt>
+                <dd>
+                    @Html.ActionLink("Create Account", "RegisterAccount")
+                </dd>
+        }
+        <dt>User Lists</dt>
+        <dd>
+            @Html.ActionLink("user lists", "ManageUser")
+        </dd>
+    </dl>
+</div>

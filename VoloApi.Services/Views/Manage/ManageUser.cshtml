@@ -1,0 +1,47 @@
+﻿@model VoloApi.Services.Models.UserBindingModel
+@{
+    ViewBag.Title = "ManageUser";
+}
+
+<h2>Users</h2>
+<hr />
+<p class="text-success">@ViewBag.StatusMessage</p>
+</br>
+<table class="table table-stripted">
+    <thead>
+        <th>User</th>
+        <th>Role</th>
+    @if (ViewBag.Administrator == true)
+    {
+            <th>Action</th>
+    }
+    </thead>  
+    <tbody>
+
+            @foreach (var item in ViewBag.userList)
+            {
+                <tr>
+                    <td>@item.User</td>
+                    <td>@item.Role</td>
+                    @if (ViewBag.Administrator == true)
+                    {
+                    <td>
+                        @if (ViewBag.AdminId == item.UserId)
+                        {
+                            <label>-</label>
+
+                        }
+                        else
+                        {
+                            @Html.ActionLink("Edit", "CustomizeUser", "Manage", new { id = item.UserId }, null)
+                        }
+                     </td>
+                    }
+
+                </tr>
+            }
+
+    </tbody>
+
+</table>
+
