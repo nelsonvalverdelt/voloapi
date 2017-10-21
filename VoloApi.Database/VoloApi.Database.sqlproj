@@ -62,13 +62,25 @@
     <Folder Include="Data" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tables\dbo\Rol.sql" />
+    <Build Include="Tables\dbo\Role.sql" />
     <Build Include="Tables\dbo\User.sql" />
     <Build Include="Tables\dbo\UserClaim.sql" />
     <Build Include="Tables\dbo\UserLogin.sql" />
     <Build Include="Tables\dbo\UserRol.sql" />
+    <Build Include="Tables\dbo\Airport.sql" />
+    <Build Include="Tables\dbo\City.sql" />
+    <Build Include="Tables\dbo\Coordinate.sql" />
+    <Build Include="Tables\dbo\Event.sql" />
+    <Build Include="Tables\dbo\HelperEvent.sql" />
+    <Build Include="Tables\dbo\EventDate.sql" />
+    <Build Include="Tables\dbo\Flight.sql" />
+    <Build Include="Tables\dbo\Origin.sql" />
+    <Build Include="Tables\dbo\State.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="VoloApi.Database.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="VoloApi.Database.refactorlog" />
   </ItemGroup>
 </Project>

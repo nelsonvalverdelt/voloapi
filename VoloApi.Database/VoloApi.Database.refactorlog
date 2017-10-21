@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="875ab8e3-e18c-4bed-92e4-7a465ba646bb" ChangeDateTime="10/21/2017 09:22:19">
+    <Property Name="ElementName" Value="[dbo].[City].[State]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[City]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StateId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c4174b22-c9d3-445f-a523-5d6296f0900e" ChangeDateTime="10/21/2017 09:30:07">
+    <Property Name="ElementName" Value="[dbo].[Event].[AirPlanePho]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Event]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AirplanePhotoUrl" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="161fa809-7a25-4717-a5ef-1fe0a29f25b5" ChangeDateTime="10/21/2017 09:45:26">
+    <Property Name="ElementName" Value="[dbo].[Flight].[ArrivalAirport]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Flight]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ArrivalAirportId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="abc6e384-8d54-462f-a3cf-23e76d1d9807" ChangeDateTime="10/21/2017 09:45:58">
+    <Property Name="ElementName" Value="[dbo].[Flight].[ArrivalDateId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Flight]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ArrivalDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="683f6f92-1cf1-41c9-8afc-e44d6c907a24" ChangeDateTime="10/21/2017 09:46:08">
+    <Property Name="ElementName" Value="[dbo].[Flight].[DepartureDateId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Flight]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DepartureDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="03dd3b51-c690-4762-a047-19982a9edd4a" ChangeDateTime="10/21/2017 10:04:07">
+    <Property Name="ElementName" Value="[dbo].[FK_Airport_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Airport]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Airport_Coordinate]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9697683d-ad4c-4d95-a07e-bd0989907cc4" ChangeDateTime="10/21/2017 10:04:15">
+    <Property Name="ElementName" Value="[dbo].[FK_Airport_ToTable_1]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Airport]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Airport_City]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="523543e1-6813-493b-ab97-27fa4a38d306" ChangeDateTime="10/21/2017 10:06:48">
+    <Property Name="ElementName" Value="[dbo].[FK_Event_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Event]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Event_Flight_Departure]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4932022e-ffe2-4a62-b3b3-fa0c3a34203e" ChangeDateTime="10/21/2017 10:07:00">
+    <Property Name="ElementName" Value="[dbo].[FK_Event_ToTable_1]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Event]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Event_Flight_Return]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6ab40a91-6ad9-4fd1-93eb-60af19fcdce6" ChangeDateTime="10/21/2017 10:07:11">
+    <Property Name="ElementName" Value="[dbo].[FK_Event_ToTable_2]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Event]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Event_User_Host]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b279a206-5efd-4674-916b-acf321a9fa1e" ChangeDateTime="10/21/2017 10:12:15">
+    <Property Name="ElementName" Value="[dbo].[Event].[UserId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Event]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="HostId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="47cd7fb8-f120-446b-92bc-ecd8d2e9bf15" ChangeDateTime="10/21/2017 10:31:20">
+    <Property Name="ElementName" Value="[dbo].[FK_UserRol_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[UserRol]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_UserRol_User]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="353924b8-5898-4e26-a3cd-8d46f151d808" ChangeDateTime="10/21/2017 10:31:29">
+    <Property Name="ElementName" Value="[dbo].[FK_UserRol_ToTable_1]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[UserRol]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_UserRol_Role]" />
+  </Operation>
+</Operations>

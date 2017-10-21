@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[State]
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [Name] NVARCHAR(55) NOT NULL, 
+    [Code] NVARCHAR(50) NOT NULL
+)
